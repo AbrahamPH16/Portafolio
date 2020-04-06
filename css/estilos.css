@@ -285,3 +285,8 @@ figure{
     height: inherit;
     flex-wrap: inherit;
 }
+
+.beta{
+    color: red;
+    align-content: center;
+}
