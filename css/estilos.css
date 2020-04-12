@@ -286,6 +286,10 @@ figure{
     flex-wrap: inherit;
 }
 
+.event_image{
+    object-fit: scale-down;
+}
+
 .beta{
     color: red;
     align-content: center;
