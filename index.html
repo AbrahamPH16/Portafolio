@@ -1,177 +1,211 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title> Abraham Pacheco  </title>
-        <link rel="icon" type="image/png" href="images/Banner1.png">
-        <link rel="stylesheet" href="css/estilos.css">
-        <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet"> 
-    </head>
-    <body>
-        <header class="header">
-            <div class="container">
-                <figure class="logo">
-                    <img src="images/Banner1.png" alt="Logo de Empresa" height="90">
-                </figure>   
 
-         <nav class="menu">
-             <ol>
-                 <li>
-                    <a href="#portafolio" class="link">Portafolio</a>
-                 </li>
-                 <li>
-                    <a href="#eventos" class="link">Eventos</a>
-                 </li>
-                 <li>
-                    <a href="#contacto" class="link">Contacto</a>
-                 </li>
-             </ol>
-         </nav>
-            </div>
-        </header>
-        <section class="hero">
-            <div class="container">
-                <h1>
-                    Hola! Soy <strong class="name"> Abraham PH </strong> <br> Desarrollador <strong class="name"> FullStack </strong>  <br>Con Pasi&oacute;n Por <strong>JavaScript</strong>
-                </h1>  
-                <img src="images/hero2.jpg" class="hero-image" width="500" height="300" alt="Hero">
-            </div>
-                 
-            <!--<img src="images/hero1.jpg" width="500" height="300" alt="Hero"> -->     
-        </section>
-        <!--Portafolio-->
-        <section id="portafolio" class="portfolio">
-            <div class="container">
-                <h2 class="beta">P&aacute;gina Beta</h2>
-                <h2>Portafolio</h2>
-                <article class="project">
-                    <div class="project-details">
-                        <h3 class="project-title">Punto de Venta</h3 class="poject-title">
-                        <h6 class="project-course">C# / SQL SERVER / ARQUITECTURA EN CAPAS</h6>
-                        <p class="project-date"><small><strong> Fecha: </strong> 00/00/0000 </small> </p>
-                        <p class="project-url"><small><strong> Puedes verlo en: </strong> link </small> </p>
-                        <p class="project-description">
-                            Permite gestionar tareas relacionadas con la venta, tales como el cobro por tarjeta de crédito o débito, la creación e impresión del ticket de venta, gestionar el inventario o generar informes que ayudan en la gestión del negocio
-                        </p>
-                    </div>
-                    
-                    <figure class="project-imageContainer">
-                         <img class="project-image" src="images/Index.png" alt="proyecto" width="500" >
-                    </figure>
-                </article>
-                <article class="project">
-                    <div class="project-details">
-                        <h3 class="project-title">Top Videojuegos</h3 class="poject-title">
-                        <h6 class="project-course">FLUTTER / DART</h6>
-                        <p class="project-date"><small><strong> Fecha: </strong> 00/00/0000 </small> </p>
-                        <p class="project-url"><small><strong> Puedes verlo en: </strong> link </small> </p>
-                        <p class="project-description">
-                            App movil multiplataforma desarrollada en Flutter y Dart que permite calificar videojuegos a base de estrellas y dejar comentarios sobre el mismo.  
-                        </p>
-                    </div>
-                    
-                    <figure class="project-imageContainer">
-                         <img class="project-image" src="images/platzi-video-react-native.png" alt="proyecto" width="500" >
-                    </figure>
-                </article>
-                <article class="project">
-                    <div class="project-details">
-                        <h3 class="project-title">INTTEK-VENTAS</h3 class="poject-title">
-                        <h6 class="project-course">C# / SQL SERVER </h6>
-                        <p class="project-date"><small><strong> Fecha: </strong> 00/00/0000 </small> </p>
-                        <p class="project-url"><small><strong> Puedes verlo en: </strong> link </small> </p>
-                        <p class="project-description">
-                            Software desarrolllado para la empresa I.H.S el cual permirte llevar un control de todos sus procesos internos, generar y enviar documentos word.
-                        </p>
-                    </div>
-                    
-                    <figure class="project-imageContainer">
-                         <img class="project-image" src="images/IHSVENTAS.png" alt="proyecto" width="500" >
-                    </figure>
-                </article>
-            </div>
-           
-        </section>
+<head>
+    <meta charset="UTF-8">
+    <title> Abraham Pacheco </title>
+    <link rel="icon" type="image/png" href="images/Banner1.png">
+    <!-- <link rel="stylesheet" href="css/media.css" media="screen and (max-width:768px)"/> -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
+    <header class="header">
         <div class="container">
-            <h2 class="event-list-title">Más sobre mi</h2>
+            <figure class="logo">
+                <img src="images/Banner1.png" alt="Logo de Empresa" height="90">
+            </figure>
+
+            <nav class="menu" id="nav">
+                <ol>
+                    <li>
+                        <a href="#portafolio" class="link">Portafolio</a>
+                    </li>
+                    <li>
+                        <a href="#eventos" class="link">Certificados</a>
+                    </li>
+                    <li>
+                        <a href="#contacto" class="link">Contacto</a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1>
+                Hola! Soy <strong class="name"> Abraham PH </strong> <br> Desarrollador <strong class="name"> Back-End
+                </strong> <br>Jugando A Ser <strong>Front-End</strong>
+            </h1>
+            <img src="images/F6.jpeg" class="hero-image" width="500" height="300" alt="Hero">
         </div>
 
-        <!--Portafolio end-->
-        <!--Eventos-->
         
-        <section id="eventos" class="event-list">
-            <div class="container">
-                <article class="event">
-                    <figure class="event-imageContainer">
-                        <img class="event_image" src="images/mas1.png" alt="Conferencia" width="500" height="300">
-                    </figure>
-                    <div class="event-detail">
-                        <h3 class="event-title">Fundamentos de JavaScript</h3>
-                        <p class="event-description"></p>
-                        <a class="event-url" href="https://platzi.com/@CryptoPach/curso/1339-fundamentos-javascript/diploma/detalle/"  target="_blank">Ver</a>
-                    </div>
-    
-                     </article>
-                     <article class="event">
-                    <figure class="event-imageContainer">
-                        <img class="event_image" src="images/mas2.png" alt="Conferencia" width="500" height="300">
-                    </figure>
-                    <div class="event-detail">
-                        <h3 class="event-title">Flutter</h3>
-                        <p class="event-description"></p>
-                        <a class="event-url" href="https://platzi.com/@CryptoPach/curso/1386-flutter/diploma/detalle/"  target="_blank">Ver</a>
-                    </div>
-    
-                     </article>
-                     <article class="event">
-                    <figure class="event-imageContainer">
-                        <img class="event_image" src="images/mas3.png" alt="Conferencia" width="500" height="300">
-                    </figure>
-                    <div class="event-detail">
-                        <h3 class="event-title">Python</h3>
-                        <p class="event-description"> </p>
-                        <a class="event-url" href="https://platzi.com/@CryptoPach/curso/1104-python/diploma/detalle/"  target="_blank">Ver</a>
-                    </div>
-    
-                     </article>
-                     <article class="event">
-                    <figure class="event-imageContainer">
-                        <img class="event_image" src="images/mas4.png" alt="Conferencia" width="500" height="300">
-                    </figure>
-                    <div class="event-detail">
-                        <h3 class="event-title">Closures y Scope en JavaScript</h3>
-                        <p class="event-description"></p>
-                        <a class="event-url" href="https://platzi.com/@CryptoPach/curso/1807-scope/diploma/detalle/"  target="_blank">Ver</a>
-                    </div>
-                     </article>
-            </div>
-            
-        </section>
-
-        <!--Eventos end-->
-        <!--Contacto-->
-        <section id="contacto" class="contact">
-            <div class="container">
-                <form action="" class="form-email">
-                    <h3>Creamos algo juntos?</h3>
-                    <input type="text" placeholder="Déjame tu email" id="email">
-                    <button>Enviar</button>
-                </form>
-                <div class="social">
-
-                    <a href="https://twitter.com/AbrahamPH16" class="social-link twitter" target="_blank"></a>
-                    <a href="https://github.com/AbrahamPH16" class="social-link github" target="_blank"></a>
-                    <a href="https://www.instagram.com/abraham_ph16/?hl=es-la" class="social-link instagram" target="_blank"></a>
-                    
+    </section> 
+    <section id="portafolio" class="portfolio"> 
+        <div class="container">
+            <h2 class="beta">P&aacute;gina Beta</h2>
+            <h2>Portafolio</h2>
+            <article class="project">
+                <div class="project-details">
+                    <h3 class="project-title">Punto de Venta</h3 class="poject-title">
+                    <h6 class="project-course">C# / SQL SERVER / ARQUITECTURA EN CAPAS</h6>
+                    <p class="project-date"><small><strong> Fecha: </strong> 00/00/0000 </small> </p>
+                    <p class="project-url"><small><strong> Puedes verlo en: </strong> link </small> </p>
+                    <p class="project-description">
+                        Permite gestionar tareas relacionadas con la venta, tales como el cobro por tarjeta de crédito o
+                        débito, la creación e impresión del ticket de venta, gestionar el inventario o generar informes
+                        que ayudan en la gestión del negocio.
+                    </p>
                 </div>
+
+                <figure class="project-imageContainer">
+                    <img class="project-image" src="images/Index.png" alt="proyecto" >
+                </figure>
+            </article>
+            <article class="project">
+                <div class="project-details">
+                    <h3 class="project-title">Top Videojuegos</h3 class="poject-title">
+                    <h6 class="project-course">FLUTTER / DART</h6>
+                    <p class="project-date"><small><strong> Fecha: </strong> 00/00/0000 </small> </p>
+                    <p class="project-url"><small><strong> Puedes verlo en: </strong> link </small> </p>
+                    <p class="project-description">
+                        App movil multiplataforma desarrollada en Flutter y Dart que permite calificar videojuegos a
+                        base de estrellas y dejar comentarios sobre el mismo.
+                    </p>
+                </div>
+
+                <figure class="project-imageContainer">
+                    <img class="project-image" src="images/platzi-video-react-native.png" alt="proyecto">
+                </figure>
+            </article>
+            <article class="project">
+                <div class="project-details">
+                    <h3 class="project-title">INTTEK-VENTAS</h3 class="poject-title">
+                    <h6 class="project-course">C# / SQL SERVER </h6>
+                    <p class="project-date"><small><strong> Fecha: </strong> 00/00/0000 </small> </p>
+                    <p class="project-url"><small><strong> Puedes verlo en: </strong> link </small> </p>
+                    <p class="project-description">
+                        Software desarrolllado para la empresa I.H.S el cual permirte llevar un control de todos sus
+                        procesos internos, generar y enviar documentos word.
+                    </p>
+                </div>
+
+                <figure class="project-imageContainer">
+                    <img class="project-image" src="images/IHSVENTAS.png" alt="proyecto">
+                </figure>
+            </article>
+        </div>
+
+    </section> 
+    <div class="container">
+        <h2 class="event-list-title">Más sobre mi</h2>
+    </div> 
+
+    <section id="eventos" class="event-list"> 
+        <div class="container">
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event_image" src="images/mas1.png" alt="Conferencia" width="100%" height="100%">
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">Fundamentos de JavaScript</h3>
+                    <p class="event-description"></p>
+                    <a class="event-url"
+                        href="https://platzi.com/@CryptoPach/curso/1339-fundamentos-javascript/diploma/detalle/"
+                        target="_blank">Ver</a>
+                </div>
+
+            </article>
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event_image" src="images/mas2.png" alt="Conferencia" width="100%" height="100%">
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">Flutter</h3>
+                    <p class="event-description"></p>
+                    <a class="event-url" href="https://platzi.com/@CryptoPach/curso/1386-flutter/diploma/detalle/"
+                        target="_blank">Ver</a>
+                </div>
+
+            </article>
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event_image" src="images/mas3.png" alt="Conferencia" width="100%" height="100%">
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">Python</h3>
+                    <p class="event-description"> </p>
+                    <a class="event-url" href="https://platzi.com/@CryptoPach/curso/1104-python/diploma/detalle/"
+                        target="_blank">Ver</a>
+                </div>
+
+            </article>
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event_image" src="images/mas4.png" alt="Conferencia" width="100%" height="100%">
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">Git y Github</h3>
+                    <p class="event-description"></p>
+                    <a class="event-url" href="https://platzi.com/@CryptoPach/curso/1557-git-github/diploma/detalle/"
+                        target="_blank">Ver</a>
+                </div>
+            </article>
+        </div>
+
+    </section> 
+
+
+    <section id="contacto" class="contact">
+        <div class="container">
+            <form action="" class="form-email">
+                <h3>Creamos algo juntos?</h3>
+                <input type="text" placeholder="Déjame tu email" id="email">
+                <button>Enviar</button>
+            </form>
+            <div class="social">
+
+                <a href="https://twitter.com/AbrahamPH16" class="social-link twitter" target="_blank"></a>
+                <a href="https://github.com/AbrahamPH16" class="social-link github" target="_blank"></a>
+                <a href="https://www.instagram.com/abraham_ph16/?hl=es-la" class="social-link instagram"
+                    target="_blank"></a>
+
             </div>
-            
-        </section>
-        <!--Contacto end-->
-        <footer  class="footer">
+        </div>
+
+    </section>
+    
+    <footer class="footer"> 
         <div class="container">
             <div><img src="images/Banner1.png" alt="Logo" width="200"></div>
         </div>
-              </footer>
-    </body>
+    </footer> 
+  
+    <script>
+        const ipad = window.matchMedia('screen and (max-width: 767px)');
+        const menu = document.querySelector('.menu');
+        const nav = document.querySelector('#nav');
+        const burgerButton = document.querySelector('#burger-menu');
+        ipad.addListener(validation);
+        function validation(event){
+            if(event.matches){
+                burgerButton.addEventListener('click', hideShow);
+                nav.addEventListener('click',hideShow);
+
+            }
+        }
+        validation(ipad);
+        function hideShow(){
+            menu.classList.toggle('is-active');
+        }
+
+    </script>
+
+</body>
+
 </html>
